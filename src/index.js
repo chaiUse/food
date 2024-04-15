@@ -8,10 +8,10 @@ import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <HashRouter store={store}>
-    <BrowserRouter>
+  <Provider store={store}>
+    <HashRouter>
       <App />
-    </BrowserRouter>
-  </HashRouter>
+    </HashRouter>
+  </Provider>
 );
 
