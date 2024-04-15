@@ -1,0 +1,112 @@
+.classification{
+  width: 100%;
+  height: 100%;
+  // background: #000;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  .search{
+    width: 90%;
+    height: 40rem;
+    background: #e1dcdc;
+    border-radius: 50rem;
+    line-height: 40rem;
+    padding: 0 20rem ;
+    margin: 10rem 0;
+    display: flex;
+    justify-content: space-between;
+    color: #b3b3b3;
+  }
+  .LeftAndRight{
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    font-size: 10rem;
+    padding-bottom: 60rem;
+    .left{
+      width: 120rem;
+      border: 1rem solid #000;
+      flex-shrink: 0;
+      ul{
+        height: 100%;
+        background: #efefef;
+        li{
+          width: 100%;
+          height: 30rem;
+          line-height: 30rem;
+        }
+        .active{
+          background: #fff;
+          color: red;
+        }
+      }
+    }
+    .right{
+      flex: 1;
+      overflow: auto;
+      ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border: 1rem solid #000;
+        overflow: auto;
+        li{
+          width: calc(100%/3 - 10rem);
+          text-align: center;
+          height: 100rem;
+          margin: 5rem;
+          img{
+            width: 60rem;
+            height: 60rem;
+          }
+        }
+        .active{
+          background: #fff;
+          color: red;
+          border: 1rem solid red;
+        }
+      }
+    }
+  }
+  .footer{
+    width: 100%;
+    padding: 1rem;
+    display: none;
+    position: absolute;
+    left: 0;bottom: 0;
+    background: #716b6b;
+    margin: 1rem;
+    flex-wrap: wrap;
+    // padding: 23rem 0 0 0;
+    p{
+      height: 20rem;
+      line-height: 12rem;
+      font-size: 12rem;
+      flex-shrink: 0;
+      padding: 3rem;
+      margin: 3rem;
+      border: 1rem solid #000;
+    }
+    .go{
+      width: 100%;
+      display: flex;
+      position: sticky;
+      background: #716b6b;
+      left: 0;
+      top: 0;
+    }
+  }
+  .show{
+    display: flex;
+    height: 60rem;
+    overflow: auto;
+    position: fixed;
+    left: 0;bottom: 0;
+  }
+}
